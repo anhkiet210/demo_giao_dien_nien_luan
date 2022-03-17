@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Pet Shop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- animation -->
+    <link rel="stylesheet" href="../css/animation.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header & nav -->
+    <header>
+        <div class="top__header">
+            <div class="container">
+            <div class="row">
+                <ul class="top__header--link">
+                <li><a href="#"><i class="fa fa-phone"></i> 0365480118</a></li>
+                <li><a href="#"><i class="far fa-envelope"></i> PetShop@email.com</a></li>
+                <li><a href="#"><i class="fa fa-map-marker"></i> Cần Thơ</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="main__header">
+            <div class="container">
+            <div class="row">
+                <div class="col-3">
+                <a href="#">
+                    <img src="../img/2.png" class="header__logo" alt="Logo Pet Shop">
+                </a>
+                </div>
+                <div class="col-6 header__search">
+                <div class="header__search--group">
+                    <form action="">
+                    <input type="text" class="header__search--input" placeholder="Tìm kiếm...">
+                    <button type="submit" class="header__search--btn">
+                        <i class="far fa-search"></i>
+                    </button>
+                    </form>
+                </div>
+                </div>
+                <div class="col-3 header__cart">
+                <div class="cart">
+                    <a href="#" class="cart__link">
+                    <i class="fal fa-cart-plus"></i>
+                    Giỏ hàng
+                    <div class="sqy">2</div>
+                    </a>
+                    <div class="cart__dropdown">
+                        <div class="cart-list">
+                        <div class="product-widget">
+                            <div class="product-img">
+                                <img src="../img/1.png" alt="">
+                            </div>
+                            <div class="product__body">
+                                <h3 class="product__name"><a href="#">tên sản phẩm</a></h3>
+                                <h4 class="product__price"><span class="qty">2 x </span>15.000đ</h4>
+                                <h4 class="product__price"><span>Tổng: 15.000đ</span></h4>
+                            </div>
+                            <form action="" method="POST">
+                                <button name="delete_giohang" value="" class="delete"><i class="fas fa-times"></i></button>
+                            </form>
+                        </div>
+                        <hr>                                       
+                        <div class="product-widget">
+                            <div class="product-img">
+                                <img src="../img/1.png" alt="">
+                            </div>
+                            <div class="product__body">
+                                <h3 class="product__name"><a href="#">tên sản phẩm</a></h3>
+                                <h4 class="product__price"><span class="qty">2 x </span>15.000đ</h4>
+                                <h4 class="product__price"><span>Tổng: 15.000đ</span></h4>
+                            </div>
+                            <form action="" method="POST">
+                                <button name="delete_giohang" value="" class="delete"><i class="fas fa-times"></i></button>
+                            </form>
+                        </div>
+                        <hr>                                       
+                        </div>
+                        <div class="cart-summary">
+                            <small>3 sản phẩm</small>
+                            <h5>TỔNG: 15.000đ</h5>
+                        </div>
+                        <div class="cart-btns">
+                            <a href="#">View Cart</a>
+                            <a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="header__login">
+                    <i class="far fa-user"></i>
+                    Đăng nhập
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+    <!-- navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="row">
+            <ul class="nav">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Trang chủ</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="cart-page">
+        <h2 style="text-align:center; margin-top: 20px;">Giỏ hàng của bạn</h2>
+        <div class="container" style="margin-top: 20px;">          
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="text-align: center; vertical-align: middle;" scope="row">#</th>
+                        <th style="text-align: center; vertical-align: middle;" scope="row">Mã sản phẩm</th>
+                        <th style="text-align: center; vertical-align: middle; width: 360px" scope="row">Tên sản phẩm</th>
+                        <th style="text-align: center; vertical-align: middle;" scope="row">Ảnh sản phẩm</th>
+                        <th style="text-align: center; vertical-align: middle;" scope="row">Giá bán</th>
+                        <th style="text-align: center; vertical-align: middle;" scope="row">Số lượng</th>
+                        <th style="text-align: center; vertical-align: middle;" scope="row">Tổng tiền</th>
+                        <th style="text-align: center; vertical-align: middle; max-width: 70px;" scope="row">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center; vertical-align: middle;">1</td>
+                        <td style="text-align: center; vertical-align: middle;">MSHH01</td>
+                        <td style="text-align: center; vertical-align: middle;">Thức ăn cho chó </td>
+                        <td style="text-align: center; vertical-align: middle;"><img width="50px" height="50px" src="../img/7.png" alt=""></td>
+                        <td style="text-align: center; vertical-align: middle;">12.000đ</td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            <input type="number" name="" class="ip-quantily-cart" value="1" max="50" min="1" style="width: 80px;"></br>
+                            <!-- <span style="color:red;">Không đủ số lượng</span>
+                            <input type="number" name="sl[<?=$row_giohang['idGioHang']?>]" value="<?=$SoLuong?>" max="50" min="1" style="width: 80px;"> -->
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">12.000đ</td>
+                            <td style="text-align: center; vertical-align: middle;">
+                            <button name="delete_giohang" value="<?=$row_giohang['idGioHang']?>" class="delete"><i class="fas fa-times" style="font-size: 1.5rem;"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; vertical-align: middle;"></td>
+                        <td style="text-align: left; vertical-align: middle; font-weight:bold;" colspan="5">TỔNG TIỀN</td>
+                        <td style="text-align: center; vertical-align: middle; color: red;">12.000đ</td>
+                        <td style="text-align: center; vertical-align: middle;"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="text-align: right;" class="container">
+        <a href="checkout.php" class="btn btn-primary">Đặt hàng</a>
+        <!-- <button name="dat_hang" class="btn btn-primary">Đặt hàng</button> -->
+        <button name="update_giohang" class="btn btn-info">Cập nhật</button>
+    </div>
+    <div style="text-align: right;" class="container">
+        <span style="color: red; font-weight:bold;">* Lưu ý các sản phẩm không đủ số lượng sẽ không được thêm vào đơn hàng</span>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer__heading">
+                <div class="social facebook"><i class="fab fa-facebook-f"></i></div>
+                <div class="social youtube"><i class="fab fa-youtube"></i></div>
+                <div class="social instagram"><i class="fab fa-instagram"></i></div>
+            </div>
+            <div class="footer__body">
+                <div class="contact">
+                <div class="title">Liên hệ</div>
+                <div class="text">
+                    <i class="fas fa-home"></i> Địa chỉ: Xuân Khánh, Ninh Kiều, Cần Thơ
+                </div>
+                <div class="text">
+                    <i class="fa fa-phone"></i> 123456789
+                </div>
+                <div class="text">
+                    <i class="far fa-envelope"></i> PetShop@email.com
+                </div>
+                </div>
+                <div class="about-us">
+                <div class="title">About us</div>
+                <div class="text">
+                    Hãy đến với chúng tôi để trãi nghiệm sự chăm sóc tốt nhất.
+                </div>
+                </div>
+            </div>
+            <div class="footer__bottom">Copyright &copy; made in 2022 | This website is made with by <a href="#"> Phan Anh Kiệt</a> | <a href="#">Trần Toàn Phát</a> | <a href="#">Dương Lê Minh Hậu</a></div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    </body>
+</html>

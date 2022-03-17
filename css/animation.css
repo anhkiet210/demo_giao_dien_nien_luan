@@ -1,0 +1,36 @@
+@keyframes fadeBottom {
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+        display: none;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+        display: inline-block;
+    }
+}
+@keyframes changeColor {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes rotate1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+}
